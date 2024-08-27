@@ -329,4 +329,79 @@ $(function () {
 	});
 
 
+	/* Video section Toggle-Read More
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	// $(document).ready(function() {
+	//     $('#toggleBtn').on('click', function(e) {
+	//         e.preventDefault(); // Prevent the default anchor click behavior
+	//         var isExpanded = $('.full-text').is(':visible'); // Check if the full text is currently visible
+
+	//         if (isExpanded) {
+	//             // If expanded, collapse content and change button text to "Read More"
+	//             $('.full-text').hide();
+	//             $('.short-text').show();
+	//             $(this).text('Read More');
+	//         } else {
+	//             // If collapsed, expand content and change button text to "Show Less"
+	//             $('.short-text').hide();
+	//             $('.full-text').show();
+	//             $(this).text('Show Less');
+	//         }
+	//     });
+	// });
+
+
+
+
+	/* aboutSectionToggle-Read More
+		-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+    $('#aboutToggleBtn').on('click', function (e) {
+        e.preventDefault();
+        var fullText = $(this).closest('.about_section').find('.full-text');
+        var isExpanded = fullText.is(':visible');
+
+        if (isExpanded) {
+            fullText.slideUp();
+            $(this).text('Learn More');
+        } else {
+            fullText.slideDown();
+            $(this).text('Show Less');
+        }
+    });
+
+	/* apps section Toggle- Read More 
+		-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+		$('#appsToggleBtn').on('click', function (e) {
+        e.preventDefault();
+        var fullText = $(this).closest('.apps_section').find('.full-text');
+        var isExpanded = fullText.is(':visible');
+
+        if (isExpanded) {
+            fullText.slideUp();
+            $(this).text('Read More');
+        } else {
+            fullText.slideDown();
+            $(this).text('Show Less');
+        }
+    });
+
+   	/* Video section Toggle-Read More
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+ $('#toggleBtn').on('click', function (e) {
+        e.preventDefault();
+        var fullText = $(this).closest('.video_section').find('.full-text');
+        var isExpanded = fullText.is(':visible');
+
+        if (isExpanded) {
+            fullText.slideUp();
+            $(this).text('Read More');
+        } else {
+            fullText.slideDown();
+            $(this).text('Show Less');
+        }
+    });
+
+
+
 });
