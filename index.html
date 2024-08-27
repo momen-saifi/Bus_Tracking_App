@@ -30,7 +30,7 @@
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
-    
+
 </head>
 
 <body>
@@ -132,72 +132,89 @@
         <!-- banner section end -->
     </div>
     <!-- header section end -->
-    <!-- about section start -->
+    <!-- About section start -->
     <div class="about_section layout_padding" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="about_taital">About Our School Bus Tracking App</h1>
-                    <p class="about_text">
+                    <!-- Short version of text (always visible) -->
+                    <p class="about_text short-text">
                         Our school bus tracking app offers real-time monitoring of school buses to ensure your child’s
-                        safety
-                        and punctuality. With features like live GPS tracking, notifications for bus delays, and
-                        optimized
-                        routes, it provides peace of mind for parents and efficient management for schools.
+                        safety and punctuality. With features like live GPS tracking, notifications for bus delays, and
+                        optimized routes, it provides peace of mind for parents and efficient management for schools.
                     </p>
-                    <div class="readmore_btn"><a href="#">Learn More</a></div>
+                    <!-- Full version of text (initially hidden, shows more details) -->
+                    <p class="about_text full-text" style="display: none;">
+                        The app is designed to be user-friendly for both parents and school administrators. It allows
+                        parents to set up geofencing alerts, so they know when the bus is nearing the school or home.
+                        The real-time tracking feature helps monitor the exact location of the bus, ensuring the safety
+                        of children. For schools, the app simplifies the management of bus routes, driver schedules, and
+                        maintenance. With robust data analytics, schools can track usage patterns, optimize routes, and
+                        enhance overall operational efficiency. The app supports both iOS and Android platforms,
+                        ensuring wide accessibility.
+                    </p>
+                    <div class="readmore_btn"><a href="#" id="aboutToggleBtn">Learn More</a></div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="about_taital_box">
-                        <div class="about_box">
-                            <div class="about_box_left">
-                                <div><img src="images/icon-1.png"></div>
-                                <h5 class="android_text">iOS</h5>
-                                <h5 class="ios_text">50k</h5>
-                            </div>
-                            <div class="about_box_right">
-                                <div><img src="images/icon-2.png"></div>
-                                <h5 class="android_text">Android</h5>
-                                <h5 class="ios_text">75k</h5>
-                            </div>
+                    <div class="about_box">
+                        <div class="about_box_left">
+                            <div><img src="images/icon-1.png" alt="iOS Icon"></div>
+                            <h5 class="android_text">iOS</h5>
+                            <h5 class="ios_text">50k</h5>
                         </div>
-                        <div class="about_box_2">
-                            <div class="about_box_left">
-                                <div><img src="images/icon-3.png"></div>
-                                <h5 class="android_text">Total Downloads</h5>
-                                <h5 class="ios_text">125k</h5>
-                            </div>
-                            <div class="about_box_right">
-                                <div><img src="images/icon-2.png"></div>
-                                <h5 class="android_text">Active Users</h5>
-                                <h5 class="ios_text">20k</h5>
-                            </div>
+                        <div class="about_box_right">
+                            <div><img src="images/icon-2.png" alt="Android Icon"></div>
+                            <h5 class="android_text">Android</h5>
+                            <h5 class="ios_text">75k</h5>
                         </div>
-                    </h1>
+                    </div>
+                    <div class="about_box_2">
+                        <div class="about_box_left">
+                            <div><img src="images/icon-3.png" alt="Total Downloads Icon"></div>
+                            <h5 class="android_text">Total Downloads</h5>
+                            <h5 class="ios_text">125k</h5>
+                        </div>
+                        <div class="about_box_right">
+                            <div><img src="images/icon-2.png" alt="Active Users Icon"></div>
+                            <h5 class="android_text">Active Users</h5>
+                            <h5 class="ios_text">20k</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- about section end -->
+    <!-- About section end -->
+
     <!-- apps section start -->
     <div class="apps_section layout_padding" id="apps">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="apps_img"><img src="images/app-img.png"></div>
+                    <div class="apps_img"><img src="images/app-img.png" alt="App Image"></div>
                 </div>
                 <div class="col-md-6">
                     <div class="apps_taital_main">
                         <h1 class="apps_taital">Track Your Child's School Bus Efficiently</h1>
-                        <p class="apps_text">
+                        <!-- Short version of text (always visible) -->
+                        <p class="apps_text short-text">
                             Our school bus tracking app provides a comprehensive solution for monitoring school bus
-                            routes and
-                            ensuring your child’s safety. Enjoy real-time GPS tracking, timely updates, and route
-                            optimization,
-                            all from an intuitive mobile app designed for parents and school administrators.
+                            routes and ensuring your child’s safety. Enjoy real-time GPS tracking, timely updates, and
+                            route optimization, all from an intuitive mobile app designed for parents and school
+                            administrators.
+                        </p>
+                        <!-- Full version of text (initially hidden, shows more details) -->
+                        <p class="apps_text full-text" style="display: none;">
+                            The app is equipped with advanced features like geofencing, which alerts you when the bus
+                            enters or exits a predefined area. Parents receive instant notifications in case of route
+                            deviations or unexpected delays. Schools can easily manage fleet operations, track bus
+                            maintenance schedules, and ensure compliance with safety regulations. With user-friendly
+                            dashboards, detailed reports, and a secure cloud-based infrastructure, our app is an
+                            essential tool for modern school transportation management.
                         </p>
                         <div class="btn_main">
-                            <div class="started_bt"><a href="#">Read More</a></div>
+                            <div class="started_bt"><a href="#" id="appsToggleBtn">Read More</a></div>
                             <div class="buy_bt active"><a href="#">Download</a></div>
                         </div>
                     </div>
@@ -206,6 +223,87 @@
         </div>
     </div>
     <!-- apps section end -->
+
+
+
+
+    <!-- Video section with read more start -->
+    <!-- <div class="video_section layout_padding" id="bus-animation">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="video_text_main">
+                    <h1 class="video_taital">Experience Real-Time School Bus Tracking</h1>
+                    <p class="video_text short-text">
+                        Watch our animation to see how our school bus tracking app works in real-time. This video showcases
+                        how a bus is tracked across a digital map, mirroring the actual journey.
+                    </p>
+                    <p class="video_text full-text" style="display: none;">
+                        Stay informed and secure, knowing exactly where your child's bus is at all times. Discover the
+                        efficiency and peace of mind our app provides with live updates, route optimization, and instant notifications.
+                    </p>
+                 
+                    <div class="btn_main">
+                        <div class="started_bt"><a href="#" id="toggleBtn">Read More</a></div>
+                        <div class="buy_bt active"><a href="#">Download</a></div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-7">
+                <div class="video_container" style="aspect-ratio: 16/9;">
+                 
+                    <video width="100%" height="100%" controls style="border-radius: 10px;">
+                        <source src="https://www.example.com/animated-bus-moving-on-map.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <!-- Video section with read more end -->
+
+    <!-- Video section start -->
+    <div class="video_section layout_padding" id="bus-animation">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="video_text_main">
+                        <h1 class="video_taital">Experience Real-Time School Bus Tracking</h1>
+                        <!-- Short version of text (always visible) -->
+                        <p class="video_text short-text">
+                            Watch our animation to see how our school bus tracking app works in real-time. This video
+                            showcases
+                            how a bus is tracked across a digital map, mirroring the actual journey. Stay informed and
+                            secure,
+                            knowing exactly where your child's bus is at all times.
+                        </p>
+                        <!-- Full version of text (initially hidden, shows more details) -->
+                        <p class="video_text full-text" style="display: none;">
+                            Discover the efficiency and peace of mind our app provides with live updates, route
+                            optimization, and instant notifications.
+                        </p>
+                        <!-- Read More / Show Less button -->
+                        <div class="btn_main">
+                            <div class="started_bt"><a href="#" id="toggleBtn">Read More</a></div>
+                            <div class="buy_bt active"><a href="#">Download</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="video_container" style="aspect-ratio: 16/9;">
+                        <video width="100%" height="100%" controls style="border-radius: 10px;">
+                            <source src="https://www.example.com/animated-bus-moving-on-map.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video section end -->
+
 
     <!-- feature section start -->
     <!-- <div class="feature_section layout_padding">
@@ -339,7 +437,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="readmore_bt1"><a href="#">Read More</a></div>
+                <!-- <div class="readmore_bt1"><a href="#">Read More</a></div> -->
             </div>
         </div>
     </div>
@@ -525,7 +623,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="footer_logo"><img src="images/logo1.png" alt="Logo" style="height: 50px; width:150;"></div>
+                    <div class="footer_logo"><img src="images/logo1.png" alt="Logo" style="height: 50px; width:150;">
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -607,7 +706,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-   
+
 </body>
 
 </html>
