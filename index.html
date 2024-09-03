@@ -36,7 +36,7 @@
 <body>
     <div class="header_section">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -57,9 +57,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#feature">Feature</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#Pricing">Pricing</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#client">Client</a>
                         </li>
@@ -69,12 +69,17 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <div class="search_bt">
-                            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a href="javascript:void(0);" id="search-icon">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                            <input type="text" id="search-input" class="search-input" placeholder="Search...">
                         </div>
+
                     </form>
                 </div>
             </nav>
         </div>
+
         <!-- banner section start -->
         <div class="banner_section layout_padding" id="home">
             <div class="container-fluid">
@@ -132,6 +137,7 @@
         <!-- banner section end -->
     </div>
     <!-- header section end -->
+
     <!-- About section start -->
     <div class="about_section layout_padding" id="about">
         <div class="container">
@@ -192,7 +198,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="apps_img"><img src="images/app-img.png" alt="App Image"></div>
+                    <div class="apps_img "><img class="img_size" src="images/app-img.png" alt="App Image"></div>
                 </div>
                 <div class="col-md-6">
                     <div class="apps_taital_main">
@@ -291,10 +297,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 video_inner_section">
                     <div class="video_container" style="aspect-ratio: 16/9;">
-                        <video width="100%" height="100%" controls style="border-radius: 10px;">
-                            <source src="https://www.example.com/animated-bus-moving-on-map.mp4" type="video/mp4">
+                        <video width="100%" height="100%" autoplay muted loop style="border-radius: 10px;">
+                            <source src="images/animated-bus-moving-on-map2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -445,7 +451,7 @@
 
 
     <!-- pricing section start -->
-    <div class="pricing_section layout_padding" id="Pricing">
+    <!-- <div class="pricing_section layout_padding" id="Pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -500,7 +506,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- pricing section end -->
     <!-- testimonial section start -->
     <div class="customer_section layout_padding" id="client">
