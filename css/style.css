@@ -285,6 +285,21 @@ button {
     /* Border for initial state */
 }
 
+.navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background: transparent;
+    /* Transparent background initially */
+    color: #fff;
+    /* Text color initially */
+    border-bottom: 2px solid transparent;
+    /* Border for initial state */
+}
+
+
 .navbar.scrolled {
     background-color: #fff;
     /* Background color when scrolled */
@@ -431,6 +446,8 @@ button {
     color: #232222;
     margin-left: 0px;
     padding-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .readmore_btn {
@@ -604,7 +621,11 @@ button {
 .apps_img {
     width: 100%;
     float: left;
+   
 }
+/* .img_size{
+    height: 500px! important;    
+} */
 
 /* apps section end */
 
@@ -1374,9 +1395,11 @@ textarea#comment.update_mail::placeholder {
     max-width: 500px;
     text-align: center;
 }
+
 .message-container.success {
     background-color: #28a745;
 }
+
 .message-container.error {
     background-color: #dc3545;
 }
@@ -1406,6 +1429,7 @@ textarea#comment.update_mail::placeholder {
     height: 100%;
     border-radius: 10px;
 }
+
 /* Text Styles */
 .video_taital {
     width: 100%;
@@ -1427,16 +1451,33 @@ textarea#comment.update_mail::placeholder {
 /* Mobile View */
 @media (max-width: 767px) {
     .video_text_main {
-        text-align: center;
-    }
-    .video_container {
-        padding-top: 75%; /* Adjusting ratio for smaller screens if needed */
+        /* text-align: center; */
     }
 
-    /* Ensure video section comes after content */
-    /* .video_section .row {
-       S
-    } */
+    .video_text {
+        font-size: 14px;
+
+    }
+
+    .video_container {
+        padding: 10px;
+        /* Adjusting ratio for smaller screens if needed */
+    }
+
+    .row.align-items-center {
+        gap: 40px;
+    }
+
+    .video_taital {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .video_inner_section {
+        margin: 10px;
+    }
+
 }
 
 /* Styling for the "Read More" button */
@@ -1451,4 +1492,132 @@ textarea#comment.update_mail::placeholder {
 
 #readMoreBtn:hover {
     /* text-decoration: underline; */
+}
+
+.search_bt {
+    position: relative;
+    display: inline-block;
+}
+
+#search-icon {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+    width: 150px;
+    z-index: 10;
+    background-color: white;
+}
+
+.search_bt.active .search-input {
+    display: block;
+}
+
+/* 
+---------------------------------------
+-------------- blog section ----------- */
+
+
+
+.blog_section {
+    padding: 200px 0;
+    background-color: #ffffff;
+}
+
+.section_heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section_heading h2 {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #121111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section_heading p {
+    font-size: 18px;
+    color: #100e0e;
+}
+
+.blog_post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog_post:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog_img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #007bff;
+}
+
+.blog_content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.blog_title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.blog_text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read_more {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read_more:hover {
+    color: #0056b3;
+}
+
+.modal-header {
+    background-color: #2c3e50;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-footer .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
 }
