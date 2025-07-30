@@ -37,7 +37,7 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/trackonav-logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -57,25 +57,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#feature">Feature</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#Pricing">Pricing</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#client">Client</a>
                         </li>
+                        <!--<li class="nav-item">-->
+                        <!--    <a class="nav-link" href="blog.html">Blog</a>-->
+                        <!--</li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <div class="search_bt">
-                            <a href="javascript:void(0);" id="search-icon">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <input type="text" id="search-input" class="search-input" placeholder="Search...">
-                        </div>
+                    <div class="header-btns ms-auto ms-lg-0 d-none d-lg-flex align-items-center heading-default-color">
+                        <a class="btn btn--xxl h-45 text-white rounded-55" id="loginBtn" target="_blank"
+                            href="https://trackonav.com/index.php/admin/"
+                            style="background-color: #d9525f; color: #fefefd;">
+                            Login
+                        </a>
 
-                    </form>
+
+                    </div>
                 </div>
             </nav>
         </div>
@@ -90,7 +90,20 @@
                                 <div class="col-md-5">
                                     <div class="banner_taital_main">
                                         <h1 class="banner_taital">School Bus Tracking App</h1>
-                                        <div class="started_text"><a href="#">Read More</a></div>
+                                        <div class="started_text"><a href="blog.html">Read More</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="banner_img"><img src="images/a13.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="banner_taital_main">
+                                        <h1 class="banner_taital">School Bus Tracking App</h1>
+                                        <div class="started_text"><a href="blog.html">Read More</a></div>
                                     </div>
                                 </div>
                                 <div class="col-md-7">
@@ -103,20 +116,7 @@
                                 <div class="col-md-5">
                                     <div class="banner_taital_main">
                                         <h1 class="banner_taital">School Bus Tracking App</h1>
-                                        <div class="started_text"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="banner_img"><img src="images/banner-img.png"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="banner_taital_main">
-                                        <h1 class="banner_taital">School Bus Tracking App</h1>
-                                        <div class="started_text"><a href="#">Read More</a></div>
+                                        <div class="started_text"><a href="blog.html">Read More</a></div>
                                     </div>
                                 </div>
                                 <div class="col-md-7">
@@ -198,7 +198,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="apps_img "><img class="img_size" src="images/app-img.png" alt="App Image"></div>
+                    <div class="apps_img "><img class="img_size" src="images/app-img2.jpg" alt="App Image"></div>
                 </div>
                 <div class="col-md-6">
                     <div class="apps_taital_main">
@@ -229,9 +229,221 @@
         </div>
     </div>
     <!-- apps section end -->
+    <div>
+        <div class="container">
+            <h1 class="row">.</h1>
+        </div>
+    </div>
 
 
+    <!-- how to work section start -->
+    <div class="how-it-works tb-pad" id="how_it_works">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h2 class="section-title text-center wow zoomIn" data-wow-duration="1.5s" data-wow-offset="10">How
+                        It Works</h2>
+                    <hr class="orange-border">
+                </div>
+            </div>
+            <div class="row justify-content-center d-flex" style="padding-top: 20px;">
+                <div class="col">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="hiw-tab" role="tablist">
+                        <li class="nav-item how_it_works">
+                            <a class="nav-link active " id="parents-tab" data-toggle="pill" href="#parents" role="tab"
+                                aria-controls="parents" aria-selected="true">Parents</a>
+                        </li>
+                        <li class="nav-item how_it_works">
+                            <a class="nav-link" id="school-tab" data-toggle="pill" href="#school" role="tab"
+                                aria-controls="school" aria-selected="false">School</a>
+                        </li>
+                        <li class="nav-item how_it_works">
+                            <a class="nav-link" id="driver-tab" data-toggle="pill" href="#driver" role="tab"
+                                aria-controls="driver" aria-selected="false">Driver</a>
+                        </li>
+                    </ul>
 
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Parents Tab -->
+                        <div class="tab-pane active" id="parents" role="tabpanel" aria-labelledby="parents-tab">
+                            <div class="row">
+                                <div class="col topic-sub-details">
+                                    <div class="sub-title text-center mb-4">Parents</div>
+                                    <p class="description">Be in the know with instant SMS or app alerts when...:</p>
+                                    <p class="description">This app is specifically intended for parental use.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 wpb_right-to-left wow slideInRight">
+                                    <div class="row">
+                                        <!--<div class="col-12 col-lg-6 text-center topic-item">-->
+                                        <!--    <div class="topic-img-wrap">-->
+                                        <!--        <img src="Images/chair.png" class="img-fluid" alt="Bus Arrives">-->
+                                        <!--    </div>-->
+                                        <!--    <div class="topic-desc">Notification 5 minutes before the bus arrives at the-->
+                                        <!--        pick-up point.</div>-->
+                                        <!--</div>-->
+                                        
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/bus (3).png" class="img-fluid" alt="Bus Arrives">
+                                            </div>
+                                            <div class="topic-desc">Notification 5 minutes before the bus arrives at the
+                                                pick-up point.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/clock.png" class="img-fluid" alt="Bus Delayed">
+                                            </div>
+                                            <div class="topic-desc">Delay in the bus schedule.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/school (2).png" class="img-fluid" alt="Child Boards">
+                                            </div>
+                                            <div class="topic-desc">When the child gets on the bus.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/school.png" class="img-fluid" alt="Bus Reached School">
+                                            </div>
+                                            <div class="topic-desc">When the bus arrives at school</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/bus (1).png" class="img-fluid" alt="Child Departs ">
+                                            </div>
+                                            <div class="topic-desc">When the child gets off the bus.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/bus (2).png" class="img-fluid" alt=" Unusual Route">
+                                            </div>
+                                            <div class="topic-desc">If the bus follows an unexpected route.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/performance.png " class="img-fluid" alt="Speed Limit">
+                                            </div>
+                                            <div class="topic-desc">When the bus surpasses the speed limit.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center wpb_left-to-right wow slideInLeft ">
+                                    <img src="images/trackonavImg.jpg" alt="Parents App"
+                                        class="trackonav-img-wrap img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- School Tab -->
+                        <div class="tab-pane" id="school" role="tabpanel" aria-labelledby="school-tab">
+                            <div class="row">
+                                <div class="col topic-sub-details">
+                                    <div class="sub-title text-center mb-4">School</div>
+                                    <p class="description">Get immediate alerts for:</p>
+                                    <p class="description">This app is made for school officials.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 wpb_right-to-left">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/people.png" class="img-fluid" alt="Child Not Present">
+                                            </div>
+                                            <div class="topic-desc">If a child misses the bus or doesn't get on.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/school.png" class="img-fluid" alt="Destination">
+                                            </div>
+                                            <div class="topic-desc">When the bus arrives at its final stop.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/student (1).png" class="img-fluid"
+                                                    alt="Child Picked Up">
+                                            </div>
+                                            <div class="topic-desc">When each child is Picked from their pick-up
+                                                location.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/journey.png" class="img-fluid" alt="Bus Trip">
+                                            </div>
+                                            <div class="topic-desc">The bus begins its journey.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/performance.png" class="img-fluid" alt="Speed Limit">
+                                            </div>
+                                            <div class="topic-desc">When the bus surpasses the speed limit.</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/bus (2).png" class="img-fluid" alt="Unusual Route">
+                                            </div>
+                                            <div class="topic-desc">If the bus follows an unexpected route.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center wpb_left-to-right">
+                                    <img src="images/trackonavImg.jpg" alt="School App"
+                                        class="trackonav-img-wrap img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Driver Tab -->
+                        <div class="tab-pane" id="driver" role="tabpanel" aria-labelledby="driver-tab">
+                            <div class="row">
+                                <div class="col topic-sub-details">
+                                    <div class="sub-title text-center mb-4">Driver</div>
+                                    <p class="description">This app helps drivers easily update the bus status with:</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 wpb_right-to-left">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/student (1).png" class="img-fluid" alt="Boarding">
+                                            </div>
+                                            <div class="topic-desc">Record when students get on or off the bus</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/school-bus.gif" class="img-fluid" alt="Bus Start">
+                                            </div>
+                                            <div class="topic-desc">Begin or conclude the journey</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/bus (2).png" class="img-fluid" alt=" Speed">
+                                            </div>
+                                            <div class="topic-desc">Monitor any changes in its route</div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 text-center topic-item">
+                                            <div class="topic-img-wrap">
+                                                <img src="images/monitor.png" class="img-fluid" alt="Driver Report">
+                                            </div>
+                                            <div class="topic-desc">Submit detailed trip narratives.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center wpb_left-to-right ">
+                                    <img src="images/trackonavImg.jpg" alt="Driver App"
+                                        class="trackonav-img-wrap img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- how to work section end  -->
 
     <!-- Video section with read more start -->
     <!-- <div class="video_section layout_padding" id="bus-animation">
@@ -309,6 +521,7 @@
         </div>
     </div>
     <!-- Video section end -->
+
 
 
     <!-- feature section start -->
@@ -556,7 +769,7 @@
                                                 <div class="customer_img"><img src="images/customer-img1.png"></div>
                                             </div>
                                             <div class="customer_right">
-                                                <h3 class="customer_name">Prashant Sharma <span class="quick_icon"><img
+                                                <h3 class="customer_name">Krishna Kumar<span class="quick_icon"><img
                                                             src="images/quick-icon.png"></span></h3>
                                                 <p class="enim_text">This app has been a game-changer for my family. The
                                                     real-time
@@ -582,7 +795,7 @@
                                                 <div class="customer_img"><img src="images/customer-img1.png"></div>
                                             </div>
                                             <div class="customer_right">
-                                                <h3 class="customer_name">Prashant Sharma <span class="quick_icon"><img
+                                                <h3 class="customer_name">Naveen J <span class="quick_icon"><img
                                                             src="images/quick-icon.png"></span></h3>
                                                 <p class="enim_text">This app has been a game-changer for my family. The
                                                     real-time
@@ -624,38 +837,55 @@
         </div>
     </div>
     <!-- download section end -->
+
     <!-- footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
+            <!-- Footer Logo -->
             <div class="row">
                 <div class="col-md-12">
-                    <div class="footer_logo"><img src="images/logo1.png" alt="Logo" style="height: 50px; width:150;">
+                    <div class="footer_logo">
+                        <img src="images/trackonav-logo.png" alt="Logo" style="height: 50px; width:150;">
                     </div>
                 </div>
             </div>
+
+            <!-- Footer Content and Sections -->
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <h3 class="useful_text">About</h3>
-                    <p class="footer_text">Our school bus tracking app is designed to ensure the safety and punctuality
-                        of
-                        your children by providing real-time GPS tracking and timely notifications. We are committed to
-                        offering innovative solutions for parents and schools alike.</p>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <h3 class="useful_text">Apps</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#">iOS Version</a></li>
-                            <li><a href="#">Android Version</a></li>
-                            <li><a href="#">Web Portal</a></li>
-                            <li><a href="#">School Dashboard</a></li>
-                            <li><a href="#">Parent Portal</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
+                <!-- About Content Column -->
+                <div class="col-lg-4 col-sm-12 d-flex align-items-start">
+                    <div class="footer_content" style="position: relative; z-index: 2;">
+                        <h3 class="useful_text">About</h3>
+                        <p class="footer_text">Our school bus tracking app is designed to ensure the safety and
+                            punctuality
+                            of your children by providing real-time GPS tracking and timely notifications. We are
+                            committed to
+                            offering innovative solutions for parents and schools alike.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <h1 class="useful_text">Contact Us</h1>
+
+
+
+                <!-- Apps Section -->
+             <div class="col-lg-2 col-sm-6">
+    <h3 class="useful_text">Apps</h3>
+    <div class="footer_menu">
+        <ul>
+            <li><a href="#">iOS Version</a></li>
+            <li><a href="#">Android Version</a></li>
+            <li><a href="https://trackonav.com/index.php/admin/">Web Portal</a></li>
+            <li><a href="#">School Dashboard</a></li>
+            <li><a href="#">Parent Portal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </div>
+</div>
+
+
+                <!-- Contact Us Section -->
+                <div class="col-lg-2 col-sm-6">
+                    <h3 class="useful_text">Contact Us</h3>
                     <div class="location_text">
                         <ul>
                             <li>
@@ -681,19 +911,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <h1 class="useful_text">Newsletter</h1>
-                    <div class="form-group">
-                        <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment"
-                            name="Your Email"></textarea>
-                        <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png" alt="Subscribe"></a>
-                        </div>
-                    </div>
+                <!-- Animation Column -->
+                <div class="col-lg-4 col-sm-12 d-flex align-items-start">
+                    <div id="particles-js" style="height: 300px; width: 300px; position: relative; z-index: 1;"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- footer section end -->
+
 
     <!-- copyright section start -->
     <div class="copyright_section">
@@ -709,6 +935,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>

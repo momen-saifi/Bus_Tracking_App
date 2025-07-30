@@ -59,9 +59,9 @@
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="index.html#Pricing">Pricing</a>
                         </li> -->
-                        <!--<li class="nav-item"> -->
-                        <!--    <a class="nav-link" href="blog.html">Blog</a>-->
-                        <!--</li>-->
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#client">Client</a>
                         </li>
@@ -81,48 +81,116 @@
     </div>
     <!-- header section end -->
 
-    <!-- contact section start -->
-    <div class="contact_section layout_padding">
+    <!-- blog section start -->
+    <div class="blog_section layout_padding" id="blog">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="contact_taital contact_heading">Contact Us</h1>
-                </div>
+            <div class="section_heading">
+                <h2>Latest Blog Posts</h2>
+                <p>Stay updated with essential tips, news, and insights on school transportation and child safety.</p>
             </div>
-            <div class="contact_section_2">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mail_section map_form_container">
-                            <form id="contactForm">
-                                <input type="text" class="mail_text" placeholder="Your Name" id="name" name="name"
-                                    required>
-                                <input type="email" class="mail_text" placeholder="Email" id="email" name="email"
-                                    required>
-                                <textarea class="massage-bt" placeholder="Message" rows="5" id="messageText"
-                                    name="message" required></textarea>
-                                <div class="contact_btn_main">
-                                    <div class="send_bt"><a href="#" id="submitBtn">Send</a></div>
-                                    <div class="map_bt active"><a href="#" id="showMap">Map</a></div>
-                                </div>
-                            </form>
-                            <div class="map_main map_container">
-                                <div class="map-responsive">
-                                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Noida+Sector+127+IHDP+India" width="600" height="368" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-                                    <div class="btn_main">
-                                      <div class="map_bt d-flex justify-content-center w-100 map_center"><a href="#" id="showForm">Form</a></div>
-                                   </div>
-                                </div>
-                             </div>
-
-                            <div id="message" class="message-container"></div>
-
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog_post d-flex flex-column">
+                        <div class="blog_img">
+                            <img src="images/images/quick-icon.png.jpg"
+                                alt="5 Tips for Ensuring Your Child’s Safety During School Commute" class="img-fluid">
+                        </div>
+                        <div class="blog_content flex-grow-1 d-flex flex-column justify-content-between">
+                            <h3 class="blog_title">5 Tips for Ensuring Your Child’s Safety During School Commute</h3>
+                            <p class="blog_text">
+                                Discover practical tips to enhance your child’s safety during their school commute.
+                                Learn how to prepare for a secure journey to school every day.
+                            </p>
+                            <a href="#" class="read_more" data-toggle="modal" data-target="#blogModal1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog_post d-flex flex-column">
+                        <div class="blog_img">
+                            <img src="images/blog2.jpg" alt="How to Choose the Right School Bus Tracking App"
+                                class="img-fluid">
+                        </div>
+                        <div class="blog_content flex-grow-1 d-flex flex-column justify-content-between">
+                            <h3 class="blog_title">How to Choose the Right School Bus Tracking App</h3>
+                            <p class="blog_text">
+                                With so many options available, find out what features to look for in a school bus
+                                tracking app to ensure you select the best one for your needs.
+                            </p>
+                            <a href="#" class="read_more" data-toggle="modal" data-target="#blogModal2">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- contact section end -->
+    <!-- blog section end -->
+
+    <!-- Modal for Blog Post 1 -->
+    <div class="modal fade" id="blogModal1" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel1">5 Tips for Ensuring Your Child’s Safety During School
+                        Commute</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ensuring your child’s safety during their school commute involves several key practices. Follow
+                        these five tips to help keep your child secure:</p>
+                    <ol>
+                        <li><i class="fas fa-circle"></i> Ensure your child knows their route and bus number.</li>
+                        <li><i class="fas fa-circle"></i> Teach them the importance of staying seated and using
+                            seatbelts.</li>
+                        <li><i class="fas fa-circle"></i> Establish a consistent routine for boarding and alighting
+                            safely.</li>
+                        <li><i class="fas fa-circle"></i> Use GPS tracking apps for real-time bus location updates.</li>
+                        <li><i class="fas fa-circle"></i> Maintain regular communication with school authorities and bus
+                            drivers.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Blog Post 2 -->
+    <div class="modal fade" id="blogModal2" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel2">How to Choose the Right School Bus Tracking App</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Choosing the right school bus tracking app can be challenging. Consider these factors to find the
+                        app that best fits your requirements:</p>
+                    <ol>
+                        <li><i class="fas fa-circle"></i> Check for real-time GPS tracking capabilities.</li>
+                        <li><i class="fas fa-circle"></i> Look for user-friendly interfaces and ease of access.</li>
+                        <li><i class="fas fa-circle"></i> Ensure the app provides timely notifications for delays or
+                            changes.</li>
+                        <li><i class="fas fa-circle"></i> Verify if the app offers route optimization features.</li>
+                        <li><i class="fas fa-circle"></i> Read reviews and ratings from other users for reliability and
+                            performance insights.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- footer section start -->
 <div class="footer_section layout_padding">
     <div class="container">
@@ -217,6 +285,7 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 
     <!-- Include EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
